@@ -3,8 +3,11 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'output';
+  myCount: number = 10;
+  countChange(event: number) {
+    this.myCount = event;
+  }
 }
